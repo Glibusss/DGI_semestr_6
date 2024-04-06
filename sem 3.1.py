@@ -26,13 +26,13 @@ for i in range(0,audio_data_size,2):
 
 
 xdata_time = np.linspace(0,len(audio_amps)/sample_rate, len(audio_amps))
-xdata_freqs = 
+
 
 
 spectre = np.fft.fft(audio_amps)
 abs_spectre = abs(spectre)
 
-plt.plot(xdata,abs_spectre)
+plt.plot(xdata_time,abs_spectre)
 plt.show()
 
 pass
